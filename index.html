@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Poster Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js" defer></script>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="panel control-panel">
+        <div class="panel-header">
+          <p class="eyebrow">Markdown Poster Studio</p>
+          <h1>把 Markdown 变成可分享的视觉海报</h1>
+          <p class="panel-copy">
+            输入一段 Markdown，实时切换不同视觉模板，并导出当前预览为 PNG 图片。
+          </p>
+        </div>
+
+        <div class="toolbar-group">
+          <span class="group-label">模板风格</span>
+          <div class="chip-row" id="template-switcher"></div>
+        </div>
+
+        <div class="toolbar-group">
+          <span class="group-label">画布尺寸</span>
+          <div class="chip-row" id="preset-switcher"></div>
+        </div>
+
+        <div class="toolbar-group">
+          <div class="action-row">
+            <button class="action-button primary" id="export-button" type="button">
+              导出当前图片
+            </button>
+            <button class="action-button" id="reset-button" type="button">
+              恢复示例
+            </button>
+          </div>
+          <p class="status-text" id="status-text" role="status" aria-live="polite">
+            已准备好开始创作。
+          </p>
+        </div>
+
+        <label class="editor-wrap" for="markdown-input">
+          <span class="group-label">Markdown 输入</span>
+          <textarea
+            id="markdown-input"
+            spellcheck="false"
+            placeholder="在这里粘贴或输入 Markdown 内容..."
+          ></textarea>
+        </label>
+      </aside>
+
+      <main class="panel preview-panel">
+        <div class="preview-toolbar">
+          <div>
+            <p class="eyebrow">Live Preview</p>
+            <h2 id="preview-title">编辑部杂志风</h2>
+          </div>
+          <p class="preview-note">导出时会按当前模板生成完整长图，不截断滚动内容。</p>
+        </div>
+
+        <div class="preview-stage">
+          <section
+            class="poster-frame poster-size-portrait"
+            id="poster-frame"
+            data-theme="editorial"
+            aria-label="Markdown 海报预览"
+          >
+            <div class="poster-chrome">
+              <div class="poster-badge" id="poster-badge">Editorial</div>
+              <div class="poster-content markdown-body" id="preview-content"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
