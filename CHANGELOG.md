@@ -18,6 +18,8 @@ All notable changes to this project will be documented in this file.
 - Export width handling for code blocks
 - Export table rendering to avoid preview-style overflow behavior
 - Export height measurement for long tables and complex content blocks
+- Added KaTeX-based math support for inline formulas
+- Changed single-line `$$...$$` rendering to inline bold treatment to avoid oversized display blocks in prose
 
 ### Notes
 

@@ -199,14 +199,23 @@ function renderMarkdown(markdown) {
     return "";
   }
 
-  const rawHtml = marked.parse(source);
+  const normalizedSource = preprocessMarkdown(source);
+  const rawHtml = marked.parse(normalizedSource);
   const sanitizedHtml = DOMPurify.sanitize(rawHtml, {
     USE_PROFILES: { html: true },
   });
 
   elements.previewContent.innerHTML = sanitizedHtml;
+  renderMath(elements.previewContent);
   updateStatus("预览已更新。");
   return sanitizedHtml;
+}
+
+function preprocessMarkdown(source) {
+  // Treat single-line $$...$$ as inline emphasis instead of display math.
+  return source.replace(/(?<!\\)\$\$([^\n]+?)\$\$/g, (_, content) => {
+    return `**${content.trim()}**`;
+  });
 }
 
 function applyTemplate(templateId) {
@@ -309,6 +318,7 @@ function createExportPoster() {
   content.className = "poster-content poster-content--export markdown-body";
   applyExportBodyClass(content);
   content.innerHTML = markup.html;
+  renderMath(content);
 
   chrome.appendChild(badge);
   chrome.appendChild(content);
@@ -318,6 +328,23 @@ function createExportPoster() {
 
   state.exportNode = sandbox;
   return exportNode;
+}
+
+function renderMath(container) {
+  if (!container || !window.renderMathInElement) {
+    return;
+  }
+
+  window.renderMathInElement(container, {
+    throwOnError: false,
+    strict: "ignore",
+    ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"],
+    delimiters: [
+      { left: "\\[", right: "\\]", display: true },
+      { left: "$", right: "$", display: false },
+      { left: "\\(", right: "\\)", display: false },
+    ],
+  });
 }
 
 function destroyExportPoster() {
