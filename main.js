@@ -1,18 +1,18 @@
-const DEFAULT_MARKDOWN = `# 春季内容发布计划
+const DEFAULT_MARKDOWN = `# Markdown 信息发布简报
 
-> 把一段普通 Markdown，排版成更适合分享的视觉海报。
+> 用瑞士国际主义的网格、留白和单一高亮色，把结构化内容排版成可分享长图。
 
-## 本周重点
+## 三个设计原则
 
-- 完成官网改版的视觉文案
-- 发布产品更新说明
-- 整理一次用户访谈摘要
+- 大标题轻字重，越大越克制
+- 页面只保留一个高饱和视觉锚点
+- 代码、表格、引用都作为信息证据块处理
 
-## 推荐节奏
+## 推荐工作流
 
-1. 先写结构清晰的 Markdown
-2. 再切换合适的海报模板
-3. 最后导出 PNG 分享到社媒或群聊
+1. 先写清楚标题、引用和小节层级
+2. 再切换 IKB、柠檬黄或安全橙模板
+3. 最后导出 PNG，用于社媒、群聊或内部简报
 
 ---
 
@@ -21,7 +21,8 @@ const DEFAULT_MARKDOWN = `# 春季内容发布计划
 \`\`\`js
 const post = {
   title: "Markdown Poster Studio",
-  status: "ready",
+  system: "Swiss Grid",
+  accent: "IKB",
 };
 
 console.log(\`Exporting: \${post.title}\`);
@@ -29,19 +30,19 @@ console.log(\`Exporting: \${post.title}\`);
 
 ### 数据表格
 
-| 渠道 | 状态 | 负责人 |
+| 模块 | 状态 | 说明 |
 | --- | --- | --- |
-| 网站 | 进行中 | Lin |
-| 社媒 | 待排期 | Chen |
-| 邮件 | 已完成 | Mo |
+| 标题 | 已优化 | 轻字重 + 大字号 |
+| 引用 | 已优化 | 独立证据块 |
+| 表格 | 已优化 | 发丝线 + 固定布局 |
 
 [查看灵感库](https://example.com)
 `;
 
 const templates = [
-  { id: "editorial", name: "编辑部杂志风", badge: "Editorial" },
-  { id: "brand", name: "现代品牌卡片风", badge: "Brand" },
-  { id: "scrapbook", name: "便签拼贴风", badge: "Scrapbook" },
+  { id: "editorial", name: "IKB 网格蓝", badge: "IKB / Grid" },
+  { id: "brand", name: "柠檬黄简报", badge: "Lemon / Brief" },
+  { id: "scrapbook", name: "安全橙标注", badge: "Orange / Mark" },
 ];
 
 const canvasPresets = [

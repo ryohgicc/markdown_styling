@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markdown Poster Studio</title>
+    <title>Swiss Markdown Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700;800&family=Patrick+Hand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,10 +29,10 @@
     <div class="app-shell">
       <aside class="panel control-panel">
         <div class="panel-header">
-          <p class="eyebrow">Markdown Poster Studio</p>
-          <h1>把 Markdown 变成可分享的视觉海报</h1>
+          <p class="eyebrow">Swiss Markdown Studio</p>
+          <h1>把 Markdown 变成瑞士风信息海报</h1>
           <p class="panel-copy">
-            输入一段 Markdown，实时切换不同视觉模板，并导出当前预览为 PNG 图片。
+            输入一段 Markdown，用网格、留白、单一高亮色和清晰层级生成可分享长图。
           </p>
         </div>
 
@@ -74,9 +74,9 @@
         <div class="preview-toolbar">
           <div>
             <p class="eyebrow">Live Preview</p>
-            <h2 id="preview-title">编辑部杂志风</h2>
+            <h2 id="preview-title">IKB 网格蓝</h2>
           </div>
-          <p class="preview-note">导出时会按当前模板生成完整长图，不截断滚动内容。</p>
+          <p class="preview-note">导出时按当前模板生成完整长图，保留代码、表格和公式排版。</p>
         </div>
 
         <div class="preview-stage">
@@ -87,7 +87,7 @@
             aria-label="Markdown 海报预览"
           >
             <div class="poster-chrome">
-              <div class="poster-badge" id="poster-badge">Editorial</div>
+              <div class="poster-badge" id="poster-badge">IKB / Grid</div>
               <div class="poster-content markdown-body" id="preview-content"></div>
             </div>
           </section>
