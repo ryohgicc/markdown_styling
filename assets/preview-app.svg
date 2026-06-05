@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920" role="img" aria-labelledby="title desc">
+  <title id="title">Swiss Markdown Studio app preview</title>
+  <desc id="desc">A Swiss-style Markdown poster editor with a control panel on the left and a live poster preview on the right.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#deded8" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono{font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;font-weight:600;letter-spacing:.02em}
+      .sans{font-family:Inter,"Noto Sans SC","Helvetica Neue",Arial,sans-serif}
+      .hair{stroke:#d4d4d2;stroke-width:1}
+      .ink{fill:#0a0a0a}
+      .muted{fill:#737373}
+      .paper{fill:#fafaf8}
+      .accent{fill:#002fa7}
+    </style>
+  </defs>
+  <rect width="1440" height="920" fill="#fafaf8"/>
+  <rect width="1440" height="920" fill="url(#grid)" opacity=".75"/>
+  <rect x="18" y="18" width="428" height="884" fill="#fbfbf8" stroke="#d4d4d2"/>
+  <text x="54" y="70" class="mono muted" font-size="13">SWISS MARKDOWN STUDIO</text>
+  <text x="54" y="155" class="sans ink" font-size="70" font-weight="200">把</text>
+  <text x="54" y="232" class="sans ink" font-size="70" font-weight="200">Markdown</text>
+  <text x="54" y="309" class="sans ink" font-size="70" font-weight="200">变成瑞士</text>
+  <text x="54" y="386" class="sans ink" font-size="70" font-weight="200">风信息海报</text>
+  <text x="54" y="443" class="sans muted" font-size="17">输入一段 Markdown，用网格、留白、单一高亮色</text>
+  <text x="54" y="470" class="sans muted" font-size="17">和清晰层级生成可分享长图。</text>
+  <text x="54" y="525" class="mono muted" font-size="13">模板风格</text>
+  <g class="sans" font-size="16" font-weight="700">
+    <rect x="54" y="548" width="120" height="44" fill="#0a0a0a"/>
+    <text x="83" y="576" fill="#fafaf8">IKB 网格蓝</text>
+    <rect x="186" y="548" width="120" height="44" fill="#fff" stroke="#d4d4d2"/>
+    <text x="213" y="576" fill="#0a0a0a">柠檬黄</text>
+    <rect x="318" y="548" width="92" height="44" fill="#fff" stroke="#d4d4d2"/>
+    <text x="340" y="576" fill="#0a0a0a">安全橙</text>
+  </g>
+  <text x="54" y="642" class="mono muted" font-size="13">画布尺寸</text>
+  <g class="sans" font-size="16" font-weight="700">
+    <rect x="54" y="665" width="120" height="44" fill="#0a0a0a"/>
+    <text x="82" y="693" fill="#fafaf8">海报竖版</text>
+    <rect x="186" y="665" width="120" height="44" fill="#fff" stroke="#d4d4d2"/>
+    <text x="214" y="693" fill="#0a0a0a">社媒方图</text>
+  </g>
+  <rect x="54" y="744" width="170" height="48" class="accent"/>
+  <text x="86" y="775" class="sans" fill="#fff" font-size="17" font-weight="800">导出当前图片</text>
+  <rect x="236" y="744" width="174" height="48" fill="#fff" stroke="#d4d4d2"/>
+  <text x="288" y="775" class="sans ink" font-size="17" font-weight="800">恢复示例</text>
+  <rect x="54" y="832" width="356" height="46" fill="#fff" stroke="#d4d4d2"/>
+  <text x="74" y="861" class="mono muted" font-size="14"># Markdown 信息发布简报</text>
+  <rect x="466" y="18" width="956" height="884" fill="#fbfbf8" stroke="#d4d4d2"/>
+  <text x="504" y="70" class="mono muted" font-size="13">LIVE PREVIEW</text>
+  <text x="504" y="125" class="sans ink" font-size="54" font-weight="200">IKB 网格蓝</text>
+  <text x="976" y="115" class="sans muted" font-size="17">导出时按当前模板生成完整长图，保留代码、表格和公式排版。</text>
+  <line x1="504" y1="150" x2="1382" y2="150" class="hair"/>
+  <rect x="504" y="170" width="878" height="700" fill="url(#grid)" opacity=".65"/>
+  <rect x="590" y="170" width="24" height="700" class="accent"/>
+  <rect x="642" y="218" width="590" height="116" fill="#fafaf8" opacity=".92"/>
+  <text x="642" y="289" class="sans ink" font-size="72" font-weight="200">Markdown 信息</text>
+  <text x="642" y="372" class="sans ink" font-size="72" font-weight="200">发布简报</text>
+  <rect x="642" y="444" width="610" height="118" class="accent"/>
+  <text x="670" y="492" class="sans" fill="#fff" font-size="34" font-weight="300">用瑞士国际主义的网格、留白和单一</text>
+  <text x="670" y="538" class="sans" fill="#fff" font-size="34" font-weight="300">高亮色，把结构化内容排版成可分享长图。</text>
+  <line x1="642" y1="585" x2="1252" y2="585" stroke="#0a0a0a"/>
+  <text x="642" y="645" class="sans ink" font-size="42" font-weight="300">三个设计原则</text>
+  <text x="642" y="697" class="sans ink" font-size="21">• 大标题轻字重，越大越克制</text>
+  <text x="642" y="733" class="sans ink" font-size="21">• 页面只保留一个高饱和视觉锚点</text>
+  <text x="642" y="769" class="sans ink" font-size="21">• 代码、表格、引用都作为信息证据块处理</text>
+</svg>

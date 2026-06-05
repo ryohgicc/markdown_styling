@@ -1,11 +1,17 @@
-# Markdown Poster Studio
+# Swiss Markdown Studio
 
-一个轻量的纯前端网页工具：输入 Markdown，实时渲染成多种海报风格，并导出为适合分享的长图 PNG。
+一个轻量的纯前端网页工具：输入 Markdown，实时渲染成瑞士风信息海报，并导出为适合分享的长图 PNG。
 
 ## Preview
 
+![Swiss Markdown Studio app preview](./assets/preview-app.svg)
+
+<p align="center">
+  <img src="./assets/preview-poster.svg" alt="IKB grid poster preview" width="420" />
+</p>
+
 - 实时 Markdown 预览
-- 3 套视觉模板切换
+- 3 套瑞士风视觉模板切换
 - 多种画布比例切换
 - 导出当前海报为长图 PNG
 - 桌面与移动端自适应布局
@@ -14,8 +20,8 @@
 
 - 支持常用 GFM Markdown 渲染
   标题、列表、引用、代码块、表格、图片、链接都可直接预览
-- 海报化视觉设计
-  内置编辑部杂志风、现代品牌卡片风、便签拼贴风
+- 瑞士风信息设计
+  内置 IKB 网格蓝、柠檬黄简报、安全橙标注三套模板
 - 长图导出优化
   针对代码块、表格和长内容做了导出宽高与样式修正
 - 纯静态部署

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" role="img" aria-labelledby="title desc">
+  <title id="title">IKB grid poster preview</title>
+  <desc id="desc">A portrait Swiss-style poster generated from Markdown content with a blue accent stripe, grid background, quote block, headings, list, code block, and table.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#deded8" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono{font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;font-weight:600}
+      .sans{font-family:Inter,"Noto Sans SC","Helvetica Neue",Arial,sans-serif}
+      .ink{fill:#0a0a0a}
+      .muted{fill:#737373}
+      .paper{fill:#fafaf8}
+      .blue{fill:#002fa7}
+    </style>
+  </defs>
+  <rect width="720" height="900" fill="#fafaf8"/>
+  <rect width="720" height="900" fill="url(#grid)" opacity=".78"/>
+  <rect x="44" width="24" height="900" class="blue"/>
+  <rect x="114" y="64" width="132" height="36" fill="#fafaf8" stroke="#002fa7"/>
+  <text x="132" y="88" class="mono" fill="#002fa7" font-size="14">IKB / GRID</text>
+  <text x="114" y="178" class="sans ink" font-size="80" font-weight="200">Markdown 信息</text>
+  <text x="114" y="270" class="sans ink" font-size="80" font-weight="200">发布简报</text>
+  <rect x="114" y="350" width="548" height="126" class="blue"/>
+  <text x="148" y="405" class="sans" fill="#fff" font-size="34" font-weight="300">用瑞士国际主义的网格、留白和单一</text>
+  <text x="148" y="454" class="sans" fill="#fff" font-size="34" font-weight="300">高亮色，把结构化内容排版成可分享长图。</text>
+  <line x1="114" y1="515" x2="662" y2="515" stroke="#0a0a0a"/>
+  <text x="114" y="575" class="sans ink" font-size="40" font-weight="300">三个设计原则</text>
+  <text x="114" y="632" class="sans ink" font-size="21">• 大标题轻字重，越大越克制</text>
+  <text x="114" y="670" class="sans ink" font-size="21">• 页面只保留一个高饱和视觉锚点</text>
+  <text x="114" y="708" class="sans ink" font-size="21">• 代码、表格、引用都作为信息证据块处理</text>
+  <rect x="114" y="748" width="548" height="92" fill="#0a0a0a"/>
+  <text x="140" y="784" class="mono" fill="#fafaf8" font-size="16">const post = {</text>
+  <text x="140" y="814" class="mono" fill="#fafaf8" font-size="16">  system: "Swiss Grid", accent: "IKB"</text>
+  <text x="140" y="844" class="mono" fill="#fafaf8" font-size="16">};</text>
+</svg>
