@@ -70,6 +70,7 @@ python3 -m http.server 4173
 
 ## Notes
 
+- 本次瑞士风模板重设计使用了 [`guizang-ppt-skill`](https://github.com/op7418/guizang-ppt-skill) 作为视觉参考。
 - 依赖通过 CDN 加载，首次打开需要可访问外网
 - 导出逻辑目前聚焦于“当前海报长图”，不包含整个编辑界面截图
 - 如果内容里包含远程图片，导出前会等待图片加载完成
